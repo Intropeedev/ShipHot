@@ -1,12 +1,14 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
-body{
+
+body {
     background-color: #f4f4f0;
 }
-.nav-container{
+
+.nav-container {
     font-family: "Mozilla Headline";
     font-optical-sizing: auto;
     font-weight: 500;
@@ -18,7 +20,8 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.nav-container h1{
+
+.nav-container h1 {
     margin: 1.3rem;
     font-style: normal;
     font-size: 2rem;
@@ -27,9 +30,11 @@ body{
     font-optical-sizing: auto;
     letter-spacing: 1rem;
 }
-.iconship{
+
+.iconship {
     margin: 1.3rem 0em 1.3rem 2rem;
-   }
+}
+
 .nav-left {
     list-style: none;
     font-size: 18px;
@@ -37,10 +42,11 @@ body{
     align-items: center;
 }
 
-.nav-left li:not(.login):not(.sell):not(.about){
+.nav-left li:not(.login):not(.sell):not(.about) {
     padding: 1.1rem;
     margin-right: 2rem;
 }
+
 .nav-left li:not(.login):not(.sell):hover {
     border: 1px solid white;
     padding: 0.7rem 1rem;
@@ -50,27 +56,29 @@ body{
     justify-content: space-between;
 }
 
-.about{
+.about {
     background-color: rgb(255, 255, 255);
     padding: 0.6rem 1rem;
     border-radius: 4rem;
     color: black;
     margin-right: 1.5rem;
 }
-.login{
+
+.login {
     height: 100%;
     display: flex;
     align-items: center;
     padding: 1.8rem 2rem;
     border-left: white solid 1px;
-    
 }
-.login:hover{
+
+.login:hover {
     background-color: white;
     color: black;
     border-bottom: #000000 solid 1px;
 }
-.sell{
+
+.sell {
     background-color: #ff90e8;
     color: #000;
     height: 100%;
@@ -81,7 +89,92 @@ body{
     border-left: #000 solid 1px;
 }
 
-.sell:hover{
+.sell:hover {
     background-color: white;
 }
 
+.hero {
+    width: 50%;
+    margin: 0 auto;
+    font-family: "Mozilla Headline";
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.main-container {
+    margin: 12rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container h1 {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.main-container p {
+    width: 100%;
+    margin: 1rem;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.main-container .btn {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 2rem 0rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #000;
+    color: #ffffff;
+    border-radius: 5px;
+    font-family: "Mozilla Headline";
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.input-form {
+    padding: 1rem 3rem 1rem 2rem;
+    font-size: 1.3rem;
+    font-family: "Mozilla Headline";
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #242423;
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: white;
+
+}
+
+.searchIcon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
